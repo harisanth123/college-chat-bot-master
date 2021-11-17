@@ -1,0 +1,153 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },    
+    {
+      "tag": "department",
+      "patterns": [
+        "about department",
+        "department",
+        "department info",
+        "department avilable",
+        "how many department",
+        "dept facility",
+        "dept.",
+        "about dept.",
+        "all dept",
+        "how many dept"
+      ],
+      "responses": [
+        "There are 5 departments in IET and they are Information Technology, Printing Technology, Mechanical Engineering, Electronics and Communication Engineering, Electrical and Electronics Engineering"      ]
+    },
+    {
+      "tag": "placement_hall",
+      "patterns": [
+        "placement hall",
+        "where is placement hall",
+        "placement hall number"
+      ],
+      "responses": [
+        "Placement hall is the first floor, Room no 201"
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "about library",
+        "where is library",
+        "library",
+        "library info",
+        "where is library",
+        "information about library",
+        "library facility"
+      ],
+      "responses": [
+        "Library situated in the Underground floor near Mechanical Department"
+      ]
+    },
+    {
+      "tag": "principal",
+      "patterns": [
+        "principal",
+        "principal's name",
+        "who's the principal",
+        "name of principal"
+      ],
+      "responses": [
+        "Principal is Dr.Renjith C"
+      ]
+    },
+    {
+      "tag": "bus",
+      "patterns": [
+        "about college bus",
+        "college bus",
+        "bus info",
+        "is college bus avilable",
+        "college bus facility"
+      ],
+      "responses": [
+        "College bus is avilable for IET and it travel through the calicut town route "
+      ]
+    },
+    {
+      "tag": "head",
+      "patterns": [
+        "department head",
+        "hod",
+        "dept head",
+        "name of hod",
+        "department hod",
+        "head of department"
+      ],
+      "responses": [
+        "which department you need",
+        "specify the department",
+        "which department",
+        "department name"
+      ]
+    },
+    {
+      "tag": "about_college ",
+      "patterns": [
+        "college",
+        "about college",
+        "about iet",
+        "iet",
+        "institute of engineering and technology",
+        "campus",
+        "about campus",
+        "college details",
+        "campus details",
+        "college info",
+        "campus info",
+        "college information",
+        "campus information"
+      ],
+      "responses": [
+        "The main campus is located at Tenhipalam in Malappuram District,It is managed by and affiliated to the University of Calicut."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
