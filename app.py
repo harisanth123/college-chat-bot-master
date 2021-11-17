@@ -69,7 +69,7 @@ def predict():
         query_result = db.engine.execute("select fee_amount from fee where fee_type = 'hostel fee'")
         result = [ row[0] for row in query_result]
         response = result[0]
-        print(response)
+        
     else: 
         response= get_response(text)      
     message={"answer":response}
