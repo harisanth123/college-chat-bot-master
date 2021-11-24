@@ -155,12 +155,17 @@ def predict():
             print(response)
     
     elif 'subject'in text:
-        dpt_result = db.engine.execute("select * from dpt")
+        dpt_result = db.engine.execute("select dpt_name from dpt")
         result = [ row[0] for row in dpt_result]
         response = result[0]
-        query_result = db.engine.execute("select * from IT")
-        result = [ row[0] for row in query_result]
-        response = result[0]
+        text2 = request.get_json().get("message")
+        if 'it' in text2:
+            it_result = db.engine.execute("select sub from IT")
+            result = [ row[0] for row in it_result]
+            response = result[0]
+
+
+        
         
 
         
