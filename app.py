@@ -214,7 +214,7 @@ def logout():
 def editfee():
     form = FeeEditForm()
     if form.validate_on_submit():
-        db.engine.execute("update fee set fee_amount="+form.value.data+"where fee_type="+form.fee_type.data)
+        db.engine.execute("update fee set fee_amount="+str(form.value.data)+" where fee_type='"+form.fee_type.data+"'")
         return redirect(url_for('dashboard'))
     return render_template('editfee.html',form=form)
     
