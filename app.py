@@ -159,28 +159,43 @@ def predict():
         dpt_result = db.engine.execute("select dpt_code from dpt")
         result = [ row[0] for row in dpt_result]
         response = result
-        
-
-    elif  'EC'or'EEE'or'IT'or'MECH'or'PT' in text:
+    elif  'IT' in text:
         sem_result = db.engine.execute("select sem_code from sem")
         result = [ row[0] for row in sem_result]
         response = result
-        
-    elif  'S1' or 'S2'in text:
-        sem1_result = db.engine.execute("select subject_name from credits where sem_code='S1S2'")
-        result = [ row[0] for row in sem1_result]
-        response = result 
-        print(response)
-    elif  'S7'in text:
-        sem7_result = db.engine.execute("select subject_name from credits where sem_code='S7'")
-        result = [ row[0] for row in sem7_result]
+    elif  'semester one'in text:
+        sub1_result = db.engine.execute("select subject_name from credits where sem_code='S1S2'")
+        result = [ row[0] for row in sub1_result]
         response = result
-        print(response)         
-    elif  'S6'in text:
-        sem6_result = db.engine.execute("select subject_name from credits where sem_code='S6'")
-        result = [ row[0] for row in sem6_result]
+    elif  'semester two'in text:
+        sub2_result = db.engine.execute("select subject_name from credits where sem_code='S1S2'")
+        result = [ row[0] for row in sub2_result]
         response = result
-        print(response)       
+    elif  'semester three'in text:
+        sub3_result = db.engine.execute("select subject_name from credits where sem_code='S3'")
+        result = [ row[0] for row in sub3_result]
+        response = result
+    elif  'semester four'in text:
+        sub4_result = db.engine.execute("select subject_name from credits where sem_code='S4'")
+        result = [ row[0] for row in sub4_result]
+        response = result
+    elif  'semester five'in text:
+        sub5_result = db.engine.execute("select subject_name from credits where sem_code='S5'")
+        result = [ row[0] for row in sub5_result]
+        response = result
+    elif  'semester six'in text:
+        sub6_result = db.engine.execute("select subject_name from credits where sem_code='S6'")
+        result = [ row[0] for row in sub6_result]
+        response = result
+    elif  'semester seven'in text:
+        sub7_result = db.engine.execute("select subject_name from credits where sem_code='S7'")
+        result = [ row[0] for row in sub7_result]
+        response = result
+    elif  'semester eight'in text:
+        sub8_result = db.engine.execute("select subject_name from credits where sem_code='S8'")
+        result = [ row[0] for row in sub8_result]
+        response = result
+    
         
 
 
