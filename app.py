@@ -10,6 +10,7 @@ from nltk import text
 from werkzeug.utils import redirect
 from werkzeug.wrappers import response
 from wtforms.fields.numeric import IntegerField
+from wtforms.widgets.core import Select
 from chat import get_response
 from flask_wtf import FlaskForm
 from flask_login import UserMixin,login_user,LoginManager,login_required,logout_user,current_user
@@ -159,12 +160,33 @@ def predict():
         result = [ row[0] for row in dpt_result]
         response = result
         
+
+    elif  'EC'or'EEE'or'IT'or'MECH'or'PT' in text:
+        sem_result = db.engine.execute("select sem_code from sem")
+        result = [ row[0] for row in sem_result]
+        response = result
+        
+    elif  'S1' or 'S2'in text:
+        sem1_result = db.engine.execute("select subject_name from credits where sem_code='S1S2'")
+        result = [ row[0] for row in sem1_result]
+        response = result 
+        print(response)
+    elif  'S7'in text:
+        sem7_result = db.engine.execute("select subject_name from credits where sem_code='S7'")
+        result = [ row[0] for row in sem7_result]
+        response = result
+        print(response)         
+    elif  'S6'in text:
+        sem6_result = db.engine.execute("select subject_name from credits where sem_code='S6'")
+        result = [ row[0] for row in sem6_result]
+        response = result
+        print(response)       
         
 
 
         
         
-
+ 
         
     else: 
         response= get_response(text)      
@@ -217,4 +239,4 @@ def editfee():
     
 
 if __name__=="__main__":
-   app.run(debug=True)
+       app.run(debug=True)
