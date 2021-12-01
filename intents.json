@@ -32,121 +32,102 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },    
     {
-      "tag": "department",
+      "tag": "symptoms",
       "patterns": [
-        "about department",
-        "department",
-        "department info",
-        "department avilable",
-        "how many department",
-        "dept facility",
-        "dept.",
-        "about dept.",
-        "all dept",
-        "how many dept"
+        "about symptoms",
+        "symptoms",
+        "corona symptoms",
+        "symptoms of corona",
+        "symptom corona"
       ],
       "responses": [
-        "There are 5 departments in IET and they are Information Technology, Printing Technology, Mechanical Engineering, Electronics and Communication Engineering, Electrical and Electronics Engineering"      ]
-    },
-    {
-      "tag": "placement_hall",
-      "patterns": [
-        "placement hall",
-        "where is placement hall",
-        "placement hall number"
-      ],
-      "responses": [
-        "Placement hall is the first floor, Room no 201"
+        "most common:fever,cough,tiredness,loss of taste or smell\nless common:ssore throat,headache,aches and pains,diarrhoea,a rash on skin, or discolouration of fingers or toes,red or irritated eyes\\nSerious symptoms:difficulty breathing or shortness of breath,loss of speech or mobility, or confusion,chest pain"
       ]
     },
     {
-      "tag": "library",
+      "tag": "vaccine ",
       "patterns": [
-        "about library",
-        "where is library",
-        "library",
-        "library info",
-        "where is library",
-        "information about library",
-        "library facility"
+        "about vaccine",
+        "vaccine",
+        "how many vaccine available",
+        "vaccine in india",
+        "india vaccine",
+        "approved vaccine in india",
+        "available vaccine in india"
       ],
       "responses": [
-        "Library situated in the Underground floor near Mechanical Department"
+        "covishield\\ncovaxin\\nsputnik V\\nBECOV2A,2B,2C,2D\\nAd26.COV2.S\\nNVX-CoV2373"
       ]
     },
     {
-      "tag": "principal",
+      "tag": "best",
       "patterns": [
-        "principal",
-        "principal's name",
-        "who's the principal",
-        "name of principal"
+        "most commonly used vaccine in india",
+        "best vaccine in india",
+        "which vaccine is best"
       ],
       "responses": [
-        "Principal is Dr.Renjith C"
+        "covishield"
       ]
     },
     {
-      "tag": "bus",
+      "tag": "spread",
       "patterns": [
-        "about college bus",
-        "college bus",
-        "bus info",
-        "is college bus avilable",
-        "college bus facility"
+        "how does the virus spread",
+        "how corona spread",
+        "how covid19 spread",
+        "how corona virus spread",
+        "spreading"
       ],
       "responses": [
-        "College bus is avilable for IET and it travel through the calicut town route "
+        "COVID-19 spreads when an infected person breathes out droplets and very small particles that contain the virus. These droplets and particles can be breathed in by other people or land on their eyes, noses, or mouth. In some circumstances, they may contaminate surfaces they touch. People who are closer than 6 feet from the infected person are most likely to get infected. "
       ]
     },
     {
-      "tag": "head",
+      "tag": "prevention ",
       "patterns": [
-        "department head",
-        "hod",
-        "dept head",
-        "name of hod",
-        "department hod",
-        "head of department"
+        "how to prevent covid",
+        "covid prevention",
+        "prevntion",
+        "how to prevent corona",
+        "prevent covid"
       ],
       "responses": [
-        "which department you need",
-        "specify the department",
-        "which department",
-        "department name"
+        "wear mask\\nget vaccinated\\nuse sanitizer\\nwash your hands\\nmaintain social distance from others"
       ]
     },
     {
-      "tag": "about_college ",
+      "tag": "Pets and animals",
       "patterns": [
-        "college",
-        "about college",
-        "about iet",
-        "iet",
-        "institute of engineering and technology",
-        "campus",
-        "about campus",
-        "college details",
-        "campus details",
-        "college info",
-        "campus info",
-        "college information",
-        "campus information"
+        "can i get covid 19 from my pets or other animals",
+        "can i get corona from my pets",
+        "can i get corona from my animals",
+        "is animal spread corona"
       ],
       "responses": [
-        "The main campus is located at Tenhipalam in Malappuram District,It is managed by and affiliated to the University of Calicut."
+        " Based on the available information to date, the risk of animals spreading COVID-19 to people is considered to be low. See If You Have Pets for more information about pets and COVID-19"
       ]
     },
     {
-      "tag": "funny",
+      "tag": "childrens",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "is there any vaccine for children",
+        "can children vaccinated ",
+        "will a covid 19 vaccine alter my DNA"
+       
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "NO"
+      ]
+    },
+    {
+      "tag": "dose",
+      "patterns": [
+        "is it necessary to take second dose",
+        "is it necessary to take two doses of the covid 19 vaccine"
+      ],
+      "responses": [
+        "Yes"
       ]
     }
   ]
