@@ -203,3 +203,24 @@ body{
     font-weight: 600;
 
 }
+
+.daily-test-page{
+    display:block;
+    height:100%;
+    width:100%;
+    background-color: #ddd;
+    position: absolute;
+    top:0;
+    left:200vw;
+    transition:300ms;
+    padding:15px;
+}
+.close-button{
+    width:100%;
+    padding:10px;
+}
+.close-button button{
+    border:none;
+    color: #9C1DE7;
+    background-color:rgba(255,255,255,0);
+}
