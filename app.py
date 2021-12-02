@@ -36,6 +36,7 @@ def load_user(user_id):
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer,primary_key=True)
     username = db.Column(db.String(20), nullable=False, unique=True)
+    
     password = db.Column(db.String(80), nullable=False)
 
 
@@ -82,7 +83,7 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()  
-        print(user)
+        user_name=user.username
         if user:
             if bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user)
