@@ -15,7 +15,11 @@ body{
 .dashboard-container{
     height: 100vh;
     width: 100vw;
-    
+    /*display: grid;
+    grid-template-columns: 1fr 3fr;
+    */
+    display: flex;
+
 }
 .topbar{
     height:50px;
@@ -23,14 +27,179 @@ body{
     background:linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
     position: relative;
     top:0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.topbar-button{
+    color:#fff;
+    padding:5px 10px;
+    background: rgba(255,255,255,0.1);
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.topbar-button-gold{
+    background: linear-gradient(#fff,#eee);
+    color:#581B98;
+    font-size: 0.8em;
+    margin: 10px;
+    border-radius: 1000px;
 }
 .profile-page{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+   /* justify-content: center;
+*/
+    padding:20px;
+    position:relative;
+    background:linear-gradient(#fff,#ddd);
+    width:100%;
 }
 .profile-page h1{
     color:#9C1DE7;
+    font-size: 1em;
+    padding:20px 0 20px 0;
+
+}
+
+.profilephoto{
+    font-size:3em;
+    background-color: #bbb;
+    color:#fff;
+    padding:1em;
+    border-radius: 100%;
+    margin:10px;
+   
+}
+.sidebar{
+    min-height: calc(100vh - 50px);
+    width:20%;
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.card-link{
+    background: linear-gradient(45deg,mediumspringgreen,mediumseagreen);
+    color:#fff;
+    padding: 25px 50px;
+    display:block;
+    width:100%;
+    text-decoration: none;
+    border-radius: 10px;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+.card-link-gold{
+    background: linear-gradient(45deg,gold,orange);
+}
+.card-link:hover{
+    transition: 300ms;
+    transform: scale(1.05);
+}
+.card-link h1{
+
+    color:#fff;
+    font-weight: 600;
+    
+    
+}
+.card-link p{
     font-size: 0.8em;
+    font-weight: 400;
+}
+.material-icons{
+    vertical-align: middle;
+
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width:100%;
+    padding: 15px;
+}
+.card{
+    background:#fff;
+    margin:10px;
+    padding:15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    text-decoration: none;
+    transition: 300ms;
+}
+.card h3{
+    padding: 10px;
+
+}
+.card p{
+    padding: 10px;
+    color:#777;
+
+}
+.card:hover{
+
+    transition: 300ms;
+    transform: scale(1.05);
+}
+.profilesection{
+
+
+}
+.profilesection h3{
+    color: #581B98;
+
+}
+.navigation{
+    width:100%;
+    padding:10px 0 10px 0;
+}
+
+.navigation ul{
+    list-style-type: none;
+ 
+    text-align: left;
+    width:100%;
+}
+.navigation ul li a{
+    display: block;
+    width:100%;
+    text-decoration: none;
+    padding:15px 25px;
+    transition: 300ms;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    margin:5px 0 5px 0;
+}
+.navigation ul li a:hover{
+    background-color:#581B98;
+    color:#fff;
+    
+}
+.navigation-active{
+    background-color:#581B98;
+    color:#fff;
+    font-weight: 600;
+
 }
